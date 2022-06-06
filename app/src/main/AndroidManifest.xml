@@ -3,12 +3,14 @@
     package="com.feyzaurkut.firebasephoneauth">
 
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FirebasePhoneAuth">
+        android:theme="@style/Theme.FirebasePhoneAuth"
+        android:windowSoftInputMode="adjustPan">
         <activity
             android:name=".MainActivity"
             android:exported="true">
