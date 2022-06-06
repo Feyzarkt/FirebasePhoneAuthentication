@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">FirebasePhoneAuth</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">MY APP</string>
+    <string name="welcome">Welcome!</string>
+    <string name="your_phone_num">Phone Number:</string>
+    <string name="verification_code">Verification Code:</string>
+    <string name="code_is_wrong">The code you entered is wrong</string>
+    <string name="phone_num_is_wrong">The number you entered is missing or incorrect</string>
+    <string name="resend_code">Send the code again</string>
+    <string name="verify">VERIFY</string>
+    <string name="country_code">+90</string>
+    <string name="login_success">Login Success!</string>
+    <string name="logout_success">Logout Success!</string>
+    <string name="sms_quota_is_full">The SMS quota for the project has been exceeded</string>
+    <string name="invalid_request">Invalid request!</string>
+    <string name="phone_num_is_short">Phone number is too short</string>
+    <string name="otp_code_is_empty">Verification code is empty</string>
 </resources>
