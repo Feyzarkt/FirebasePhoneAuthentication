@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         with(binding) {
             btnFloatingAct.setOnClickListener {
                 auth.signOut()
-                findNavController().popBackStack()
+                findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
                 Toast.makeText(requireContext(), getString(R.string.logout_success), Toast.LENGTH_SHORT).show()
             }
         }
