@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import com.feyzaurkut.firebasephoneauth.R
 import com.feyzaurkut.firebasephoneauth.databinding.FragmentHomeBinding
@@ -24,7 +23,6 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater)
 
         initListeners()
-        onBackPressed()
 
         return binding.root
     }
@@ -37,14 +35,5 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(), getString(R.string.logout_success), Toast.LENGTH_SHORT).show()
             }
         }
-    }
-
-    private fun onBackPressed() {
-        val callback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                activity?.finish()
-            }
-        }
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
     }
 }
