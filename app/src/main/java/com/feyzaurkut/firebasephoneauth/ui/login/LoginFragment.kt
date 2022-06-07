@@ -138,7 +138,6 @@ class LoginFragment : Fragment() {
                         }
                         is RequestState.Failure -> {
                             binding.progressBar.isVisible = false
-                            Toast.makeText(requireContext(), requestState.exception.message, Toast.LENGTH_SHORT).show()
                             if (requestState.exception is FirebaseAuthInvalidCredentialsException) {
                                 with(binding) {
                                     tvWrongCode.text = getString(R.string.code_is_wrong)
