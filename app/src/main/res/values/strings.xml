@@ -2,7 +2,7 @@
     <string name="app_name">FirebasePhoneAuth</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title">MY APP</string>
+    <string name="title">LOGIN</string>
     <string name="welcome">Welcome!</string>
     <string name="your_phone_num">Phone Number:</string>
     <string name="verification_code">Verification Code:</string>
