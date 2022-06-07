@@ -3,7 +3,7 @@
     package="com.feyzaurkut.firebasephoneauth">
 
     <application
-        android:name=".MainApplication"
+        android:name=".ui.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,7 +12,7 @@
         android:theme="@style/Theme.FirebasePhoneAuth"
         android:windowSoftInputMode="adjustPan">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

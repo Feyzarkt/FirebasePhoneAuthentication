@@ -1,4 +1,4 @@
-package com.feyzaurkut.firebasephoneauth
+package com.feyzaurkut.firebasephoneauth.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

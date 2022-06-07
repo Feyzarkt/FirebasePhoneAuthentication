@@ -1,10 +1,11 @@
-package com.feyzaurkut.firebasephoneauth
+package com.feyzaurkut.firebasephoneauth.ui
 
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.feyzaurkut.firebasephoneauth.R
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 
