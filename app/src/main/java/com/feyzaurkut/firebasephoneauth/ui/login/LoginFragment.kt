@@ -181,8 +181,9 @@ class LoginFragment : Fragment() {
             }
 
             override fun onVerificationCompleted(phoneAuthCredential: PhoneAuthCredential) {
-                val code = phoneAuthCredential.smsCode
-                if (code != null) loginWithPhone(code)
+                //if you want to go directly to the home page without otpView, you can use this part
+                //val code = phoneAuthCredential.smsCode
+                //if (code != null) loginWithPhone(code)
             }
 
             override fun onVerificationFailed(e: FirebaseException) {
