@@ -2,6 +2,7 @@ package com.feyzaurkut.firebasephoneauth.ui.login
 
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -84,16 +85,16 @@ class LoginFragment : Fragment() {
 
             otpView.addTextChangedListener {
                 tvWrongCode.text = ""
-                otpView.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-                otpView.setItemBackground(getDrawable(requireContext(), R.drawable.bg_white_border))
+                otpView.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
+                otpView.setItemBackground(getDrawable(requireContext(), R.drawable.bg_purple_border))
             }
 
             etMobileNumberInput.addTextChangedListener {
                 tvErrorMessage.text = ""
-                tvCountryCode.setBackgroundResource(R.drawable.bg_white_border)
-                etMobileNumberInput.setBackgroundResource(R.drawable.bg_white_border)
-                tvCountryCode.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-                etMobileNumberInput.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+                tvCountryCode.setBackgroundResource(R.drawable.bg_purple_border)
+                etMobileNumberInput.setBackgroundResource(R.drawable.bg_purple_border)
+                tvCountryCode.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
+                etMobileNumberInput.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
             }
         }
 
@@ -188,6 +189,7 @@ class LoginFragment : Fragment() {
 
             override fun onVerificationFailed(e: FirebaseException) {
                 binding.progressBar.isVisible = false
+                Log.e("fail", "$e")
                 with(binding) {
                     tvErrorMessage.text = getString(R.string.phone_num_is_wrong)
                     tvCountryCode.setBackgroundResource(R.drawable.bg_red_border)

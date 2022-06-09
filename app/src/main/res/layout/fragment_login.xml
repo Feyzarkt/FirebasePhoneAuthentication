@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.login.LoginFragment"
-    android:background="@color/light_purple">
+    android:background="@color/white">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -53,7 +53,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/purple"
                 app:layout_constraintTop_toBottomOf="@+id/ivAppIcon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -67,7 +67,7 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="8dp"
                 android:textSize="16sp"
-                android:textColor="@color/white"
+                android:textColor="@color/purple"
                 android:text="@string/your_phone_num"
                 app:layout_constraintTop_toBottomOf="@+id/tvAppName"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -88,12 +88,12 @@
                     android:layout_width="68dp"
                     android:layout_height="53dp"
                     android:text="@string/country_code"
-                    android:background="@drawable/bg_white_border"
+                    android:background="@drawable/bg_purple_border"
                     android:layout_marginTop="3dp"
                     android:layout_marginStart="15dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/purple"
                     android:textSize="16sp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -111,8 +111,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:textColor="@color/white"
-                        android:background="@drawable/bg_white_border"
+                        android:textColor="@color/purple"
+                        android:background="@drawable/bg_purple_border"
                         android:maxLength="10"
                         android:textSize="16sp" />
 
@@ -178,7 +178,7 @@
                 android:textSize="38sp"
                 tools:text="1:25"
                 android:gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/purple"
                 app:layout_constraintTop_toBottomOf="@id/ivTimer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:textSize="16sp"
-                android:textColor="@color/white"
+                android:textColor="@color/purple"
                 android:text="@string/verification_code"
                 app:layout_constraintStart_toStartOf="@id/otpView"
                 app:layout_constraintTop_toBottomOf="@+id/tvTimer"/>
@@ -202,8 +202,8 @@
                 app:itemHeight="47dp"
                 android:layout_marginTop="10dp"
                 android:inputType="number"
-                android:itemBackground="@drawable/bg_white_border"
-                android:textColor="@android:color/white"
+                android:itemBackground="@drawable/bg_purple_border"
+                android:textColor="@color/purple"
                 app:itemCount="6"
                 app:viewType="none"
                 android:focusableInTouchMode="true"
@@ -231,7 +231,7 @@
                 android:layout_marginTop="33dp"
                 android:layout_marginHorizontal="55dp"
                 android:text="@string/verify"
-                android:background="@drawable/bg_pink"
+                android:background="@drawable/bg_purple"
                 android:textSize="18sp"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
@@ -246,7 +246,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="8dp"
                 android:textSize="18sp"
-                android:textColor="@color/white"
+                android:textColor="@color/purple"
                 android:text="@string/resend_code"
                 app:layout_constraintTop_toBottomOf="@id/btnContinue"
                 app:layout_constraintEnd_toEndOf="parent"
