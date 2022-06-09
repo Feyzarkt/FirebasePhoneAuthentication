@@ -1,4 +1,4 @@
-# FirebasePhoneAuthentication
+# Firebase Phone Authentication
 An example project of login process with firebase phone authantication.
 
 # Output
